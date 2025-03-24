@@ -1,0 +1,38 @@
+// pagination.scss
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  .pagination__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+
+  .pagination__arrow,
+  .pagination__page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    color: #222;
+    text-decoration: none;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #f16d7f;
+      color: #fff;
+    }
+  }
+
+  .pagination__arrow img {
+    width: 16px;
+    height: 16px;
+  }
+}

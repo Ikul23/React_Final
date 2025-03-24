@@ -1,0 +1,114 @@
+// _footer.scss
+.navFooter {
+  background: $backgroundColorNavFooter;
+  padding: $navFooterPadding;
+  font-size: 14px;
+  color: #fbfbfb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left-group {
+
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__right-group {
+
+    display: flex;
+    gap: 20px;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+// subscribe.scss
+.footer__testimonial-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  background-image: url('/public/assets/images/subscribe.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 97px 126px;
+}
+
+.footer__testimonial {
+  flex: 1;
+  text-align: center;
+
+  img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  blockquote {
+    font-style: italic;
+    text-align: center;
+    color: #222224;
+  }
+}
+
+.footer__subscribe {
+  flex: 1;
+  text-align: center;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222224;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #222224;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    margin-right: -1px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #FF6F61;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #e65b50;
+    }
+  }
+}
