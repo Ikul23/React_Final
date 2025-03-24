@@ -1,5 +1,5 @@
-// header.scss
 @use '../../styles/variables' as *;
+
 .navFooter {
   background: $backgroundColorNavFooter;
   padding: $navFooterPadding;
@@ -20,23 +20,62 @@
     align-items: center;
     gap: 20px;
   }
+
+  .icon-button {
+    position: relative;
+
+    &.active {
+      .icon {
+        filter: brightness(0) saturate(100%) invert(54%) sepia(48%) saturate(1233%) hue-rotate(305deg) brightness(94%) contrast(96%);
+      }
+    }
+  }
+
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: $colorTextHeading;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
 }
 
 .breadcrumbs {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-}
+  padding: 15px 0;
+  background-color: #F8F3F4;
+  min-height: 150px;
 
-.breadcrumbs__link {
-  font-weight: 300;
-  font-size: 14px;
-  color: #636363;
-}
+  &__link {
+    font-weight: 300;
+    font-size: 14px;
+    color: #636363;
+    text-decoration: none;
+    transition: color 0.3s;
 
-.breadcrumbs__link_site {
-  font-weight: 700;
-  color: #f16d7f;
+    &:hover {
+      color: $colorTextHeading;
+    }
+
+    &_site {
+      font-weight: 700;
+      color: $colorTextHeading;
+    }
+  }
+
+  &__separator {
+    margin: 0 8px;
+    color: #636363;
+  }
 }
 
 .top-head {
@@ -45,10 +84,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  padding: 0 20px;
 
-.top-head__heading {
-  font-weight: 400;
-  font-size: 24px;
-  color: #f16d7f;
+  &__heading {
+    font-weight: 400;
+    font-size: 24px;
+    color: $colorTextHeading;
+  }
 }

@@ -1,54 +1,89 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.scss';
+
+// Импортируем изображения правильно
+import logo from '../../assets/images/logo.png';
+import searchIcon from '../../assets/images/search.svg';
+import menuIcon from '../../assets/images/menu.svg';
+import regIcon from '../../assets/images/reg.svg';
+import cartIcon from '../../assets/images/cart.svg';
 
 const Header = () => {
   return (
-    <header className="navFooter container">
-      <nav>
-        <div className="navFooter__left-group">
-          <Link to="/">
-            <img 
-              src="../../assets/images/logo.png" 
-              alt="Brand Logo" 
-              className="logo" 
-            />
-          </Link>
-          <button className="search-button">
-            <img 
-              src="../../assets/images/search.svg" 
-              alt="Search" 
-            />
-          </button>
-        </div>
-        
-        <div className="navFooter__right-group">
-          <button className="icon-button">
-            <img 
-              src="../../assets/images/menu.svg" 
-              alt="Menu" 
-              className="icon" 
-            />
-          </button>
+    <>
+      {/* Верхняя навигация */}
+      <header className="navFooter container">
+        <nav>
+          <div className="navFooter__left-group">
+            <Link to="/">
+              <img 
+                src={logo} 
+                alt="Brand Logo" 
+                className="logo" 
+              />
+            </Link>
+            <button className="search-button">
+              <img 
+                src={searchIcon} 
+                alt="Search" 
+              />
+            </button>
+          </div>
           
-          <Link to="/registration" className="icon-button">
-            <img 
-              src="../../assets/images/reg.svg" 
-              alt="Registration" 
-              className="icon" 
-            />
-          </Link>
-          
-          <Link to="/cart" className="icon-button">
-            <img 
-              src="../../assets/images/cart.svg" 
-              alt="Shopping Cart" 
-              className="icon" 
-            />
-          </Link>
-        </div>
-      </nav>
-    </header>
+          <div className="navFooter__right-group">
+            <button className="icon-button">
+              <img 
+                src={menuIcon} 
+                alt="Menu" 
+                className="icon" 
+              />
+            </button>
+            
+            <NavLink 
+              to="/registration" 
+              className={({ isActive }) => 
+                `icon-button ${isActive ? 'active' : ''}`
+              }
+            >
+              <img 
+                src={regIcon} 
+                alt="Registration" 
+                className="icon" 
+              />
+            </NavLink>
+            
+            <NavLink 
+              to="/cart" 
+              className={({ isActive }) => 
+                `icon-button ${isActive ? 'active' : ''}`
+              }
+            >
+              <img 
+                src={cartIcon} 
+                alt="Shopping Cart" 
+                className="icon" 
+              />
+              <span className="cart-count">0</span>
+            </NavLink>
+          </div>
+        </nav>
+      </header>
+
+      {/* Хлебные крошки (пример для страницы продукта) */}
+      <div className="breadcrumbs container">
+        <NavLink to="/" className="breadcrumbs__link">
+          Home
+        </NavLink>
+        <span className="breadcrumbs__separator">/</span>
+        <NavLink 
+          to="/catalog" 
+          className="breadcrumbs__link breadcrumbs__link_site"
+        >
+          Catalog
+        </NavLink>
+      </div>
+    </>
   );
 };
 

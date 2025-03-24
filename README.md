@@ -69,11 +69,9 @@ project/
 │ │ ├── global.scss
 │ │ └── variables.scss
 │
-│ ├── utils/ # Вспомогательные функции
-│ │ └── helpers.js
 │
-│ ├── context/ # Контекст для управления состоянием
+│ ├── context/
 │ │ └── CartContext.jsx
 │
-│ └── assets/ # Локальные ассеты
+│ └── assets/
 │ └── images/

@@ -1,23 +1,34 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home/Home.jsx';
-import Catalog from './Pages/Catalog/Catalog.jsx';
-import ProductPage from './Pages/ProductPage/ProductPage.jsx';
-import CartPage from './Pages/CartPage/CartPage.jsx';
-import Registration from './Pages/Registration/Registration.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home';
+import Catalog from './pages/Catalog/Catalog';
+import ProductPage from './pages/ProductPage/ProductPage';
+import CartPage from './pages/CartPage/CartPage';
+import Registration from './pages/Registration/Registration';
+import './styles/main.scss';
 
-const AppRoutes = () => {
+function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/catalog" element={<Catalog />} />
-        <Route path="/product/:id" element={<ProductPage />} />
-        <Route path="/cart" element={<CartPage />} />
-        <Route path="/registration" element={<Registration />} />
-      </Routes>
-    </Router>
+    <BrowserRouter>
+      <div className="app">
+        <Header />
+        
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/product/:id" element={<ProductPage />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/registration" element={<Registration />} />
+          </Routes>
+        </main>
+        
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
-};
+}
 
-export default AppRoutes;
+export default App;
