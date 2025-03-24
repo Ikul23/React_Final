@@ -9,14 +9,14 @@ const Header = () => {
         <div className="navFooter__left-group">
           <Link to="/">
             <img 
-              src="/assets/images/logo.png" 
+              src="../../assets/images/logo.png" 
               alt="Brand Logo" 
               className="logo" 
             />
           </Link>
           <button className="search-button">
             <img 
-              src="/assets/images/search.svg" 
+              src="../../assets/images/search.svg" 
               alt="Search" 
             />
           </button>
@@ -25,7 +25,7 @@ const Header = () => {
         <div className="navFooter__right-group">
           <button className="icon-button">
             <img 
-              src="/assets/images/menu.svg" 
+              src="../../assets/images/menu.svg" 
               alt="Menu" 
               className="icon" 
             />
@@ -33,7 +33,7 @@ const Header = () => {
           
           <Link to="/registration" className="icon-button">
             <img 
-              src="/assets/images/reg.svg" 
+              src="../../assets/images/reg.svg" 
               alt="Registration" 
               className="icon" 
             />
@@ -41,7 +41,7 @@ const Header = () => {
           
           <Link to="/cart" className="icon-button">
             <img 
-              src="/assets/images/cart.svg" 
+              src="../../assets/images/cart.svg" 
               alt="Shopping Cart" 
               className="icon" 
             />

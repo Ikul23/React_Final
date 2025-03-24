@@ -1,5 +1,5 @@
 // header.scss
-@import '/react-final/src/styles/variables.scss';
+@use '../../styles/variables' as *;
 .navFooter {
   background: $backgroundColorNavFooter;
   padding: $navFooterPadding;

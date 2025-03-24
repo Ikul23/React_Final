@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
-import './CartPage.scss';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import './CartPage';
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([
     {
       id: 1,
-      image: '/react-final/public/assets/images/img2_catalog.png',
+      image: '../../assets/images/img2_catalog.png',
       name: 'MANGO PEOPLE T-SHIRT',
       price: 300,
       color: 'Red',
@@ -17,7 +17,7 @@ const CartPage = () => {
     },
     {
       id: 2,
-      image: '/react-final/public/assets/images/Img1_product.png',
+      image: '../../assets/images/Img1_product.png',
       name: 'MANGO PEOPLE T-SHIRT',
       price: 300,
       color: 'Red',

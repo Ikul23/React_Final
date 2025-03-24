@@ -13,12 +13,12 @@ const Catalog = () => {
   const products = [
     {
       id: 1,
-      image: '/react-final/public/assets/images/img1_catalog.png',
+      image: '../../assets/images/img1_catalog.png',
       name: 'ELLERY X M\'O CAPSULE',
       description: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.',
       price: 52.00
     },
-    // Остальные товары аналогично...
+    
     {
       id: 9,
       image: '/react-final/public/assets/images/img9_catalog.png',

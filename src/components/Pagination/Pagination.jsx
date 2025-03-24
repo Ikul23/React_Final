@@ -17,7 +17,7 @@ const Pagination = ({ currentPage = 1, totalPages = 5, onPageChange }) => {
           onClick={() => onPageChange(currentPage - 1)}
           disabled={currentPage === 1}
         >
-          <img src="/assets/images/Left_arrow_pag.png" alt="Previous" />
+          <img src="../../assets/images/Left_arrow_pag.png" alt="Previous" />
         </button>
 
         {/* Номера страниц */}
@@ -37,7 +37,7 @@ const Pagination = ({ currentPage = 1, totalPages = 5, onPageChange }) => {
           onClick={() => onPageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
         >
-          <img src="/assets/images/Right_arrow_pag.png" alt="Next" />
+          <img src="../../assets/images/Right_arrow_pag.png" alt="Next" />
         </button>
       </div>
     </section>

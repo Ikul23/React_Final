@@ -1,5 +1,5 @@
 // pagination.scss
-@import '/react-final/src/styles/variables.scss';
+@use '../../styles/variables' as *;
 .pagination {
   display: flex;
   justify-content: center;

@@ -4,19 +4,19 @@ import './Features.scss';
 const Features = () => {
   const features = [
     {
-      icon: '/assets/images/Foot_1_1.svg',
+      icon: '../../assets/images/Foot_1_1.svg',
       alt: 'Delivery truck',
       title: 'Free Delivery',
       description: 'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.'
     },
     {
-      icon: '/assets/images/Foot_1_2.png',
+      icon: '../../assets/images/Foot_1_2.svg',
       alt: 'Discount percent',
       title: 'Sales & discounts',
       description: 'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.'
     },
     {
-      icon: '/assets/images/Foot_1_3.png',
+      icon: '../../assets/images/Foot_1_3.svg',
       alt: 'Quality crown',
       title: 'Quality assurance',
       description: 'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.'

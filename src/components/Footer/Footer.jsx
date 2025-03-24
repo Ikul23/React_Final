@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <section className="footer__testimonial-subscribe container">
         <div className="footer__testimonial">
-          <img src="/assets/images/Foot_face.png" alt="Profile" />
+          <img src="../../assets/images/Foot_face.png" alt="Profile" />
           <blockquote>
             "Vestibulum quis porttitor dui! Quisque viverra nunc mi, <br />
             a pulvinar purus condimentum."
@@ -29,16 +29,16 @@ const Footer = () => {
         </div>
         <div className="navFooter__right-group">
           <Link to="/facebook" className="social-link">
-            <img src="/assets/images/Foot_3_f.svg" alt="Facebook" />
+            <img src="../../assets/images/Foot_3_f.svg" alt="Facebook" />
           </Link>
           <Link to="/instagram" className="social-link">
-            <img src="/assets/images/Foot_3_i.png" alt="Instagram" />
+            <img src="../../assets/images/Foot_3_i.png" alt="Instagram" />
           </Link>
           <Link to="/pinterest" className="social-link">
-            <img src="/assets/images/Foot_3_h.png" alt="Pinterest" />
+            <img src="../../assets/images/Foot_3_h.png" alt="Pinterest" />
           </Link>
           <Link to="/twitter" className="social-link">
-            <img src="/assets/images/Foot_3_t.png" alt="Twitter" />
+            <img src="../../assets/images/Foot_3_t.png" alt="Twitter" />
           </Link>
         </div>
       </footer>

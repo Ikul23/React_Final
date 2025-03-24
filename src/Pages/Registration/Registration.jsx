@@ -110,7 +110,7 @@ const Registration = () => {
               </p>
 
               <button type="submit" className="registration__button">
-                JOIN NOW <img src="/react-final/public/assets/images/Registration_arrow.png" alt="Arrow" />
+                JOIN NOW <img src="../../assets/images/Registration_arrow.png" alt="Arrow" />
               </button>
             </form>
 
