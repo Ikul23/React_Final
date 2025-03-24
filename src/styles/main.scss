@@ -1,21 +1,19 @@
 // src/styles/main.scss
-@import 'variables.scss';
-@import 'global.scss';
+@forward 'variables.scss';
+@forward 'global.scss';
 
 // Импорты компонентов
-@import '../components/Features/Features';
-@import '../components/FilterSort/FilterSort';
-@import '../components/Footer/Footer';
-@import '../components/Header/Header';
-@import '../components/Pagination/Pagination';
-@import '../components/Product/Product';
+@forward '../components/Features/Features';
+@forward '../components/FilterSort/FilterSort';
+@forward '../components/Footer/Footer';
+@forward'../components/Header/Header';
+@forward '../components/Pagination/Pagination';
+@forward '../components/Product/Product';
 
 // Импорты страниц
-@import '../Pages/CartPage/CartPage';
-@import '../Pages/Catalog/Catalog';
-@import '../Pages/Home/Home';
-@import '../Pages/ProductPage/ProductPage';
-@import '../Pages/Registration/Registration';
+@forward'../Pages/CartPage/CartPage';
+@forward'../Pages/Catalog/Catalog';
+@forward '../Pages/Home/Home';
+@forward '../Pages/ProductPage/ProductPage';
+@forward '../Pages/Registration/Registration';
 
-// Шрифты
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");

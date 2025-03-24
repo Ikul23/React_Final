@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Product from '../components/Product/Product';
+import Product from '../../components/Product/Product';
 import './ProductPage.scss';
 
 const ProductPage = () => {
@@ -87,7 +87,7 @@ const ProductPage = () => {
               onClick={addToCart}
               disabled={!selectedColor || !selectedSize}
             >
-              <img src="/assets/images/Basket.png" alt="basket" />
+              <img src="../../assets/images/Basket.png" alt="basket" />
               <p className="centralBlockButton__button_text">Add to Cart</p>
             </button>
           </div>
