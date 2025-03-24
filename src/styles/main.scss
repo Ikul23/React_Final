@@ -1,0 +1,15 @@
+// main.scss
+@import 'vars';
+@import 'global';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/buttons';
+@import 'pages/index';
+@import 'pages/catalog';
+@import 'pages/product';
+@import 'pages/cart';
+@import 'pages/registration';
+@import 'components/features';
+@import 'components/filter-sort';
+@import 'components/pagination';
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");

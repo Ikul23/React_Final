@@ -12,7 +12,7 @@ const ProductPage = () => {
   // Данные товара (в реальном приложении будут из API)
   const product = {
     id: 1,
-    image: '/assets/images/Img1_product.png',
+    image: '/react-final/public/assets/images/Img1_product.png',
     name: 'MOSCHINO CHEAP AND CHIC',
     description: 'Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.',
     price: 561,
@@ -39,7 +39,7 @@ const ProductPage = () => {
       <section className="centralBlockContent content">
         <div>
           <h2 className="centralBlockContent__header">WOMEN COLLECTION</h2>
-          <img className="centralBlockContent__line" src="/assets/images/Line.png" alt="Line" />
+          <img className="centralBlockContent__line" src="/react-final/public/assets/images/Line.png" alt="Line" />
           <h2 className="centralBlockContent__subheader">{product.name}</h2>
           <p className="centralBlockContent__text">{product.description}</p>
           <p className="centralBlockContent__price">${product.price.toFixed(2)}</p>
@@ -100,21 +100,21 @@ const ProductPage = () => {
         <div className="similar-products-grid">
           <Product
             id={2}
-            image="/assets/images/Product1_prod.png"
+            image="/react-final/public/assets/images/Product1_prod.png"
             name="ELLERY X M'O CAPSULE"
             description="Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi."
             price={52.00}
           />
           <Product
             id={3}
-            image="/assets/images/Product2_prod.png"
+            image="/react-final/public/assets/images/Product2_prod.png"
             name="ELLERY X M'O CAPSULE"
             description="Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi."
             price={52.00}
           />
           <Product
             id={4}
-            image="/assets/images/Product3_prod.png"
+            image="/react-final/public/assets/images/Product3_prod.png"
             name="ELLERY X M'O CAPSULE"
             description="Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi."
             price={52.00}

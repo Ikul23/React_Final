@@ -8,7 +8,7 @@ const CartPage = () => {
   const [cartItems, setCartItems] = useState([
     {
       id: 1,
-      image: '/assets/images/img2_catalog.png',
+      image: '/react-final/public/assets/images/img2_catalog.png',
       name: 'MANGO PEOPLE T-SHIRT',
       price: 300,
       color: 'Red',
@@ -17,7 +17,7 @@ const CartPage = () => {
     },
     {
       id: 2,
-      image: '/assets/images/Img1_product.png',
+      image: '/react-final/public/assets/images/Img1_product.png',
       name: 'MANGO PEOPLE T-SHIRT',
       price: 300,
       color: 'Red',

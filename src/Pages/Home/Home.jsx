@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
+import Header from '../../components/Footer/Header';
 import Footer from '../../components/Footer/Footer';
 import Features from '../../components/Features/Features';
 import Product from '../../components/Product/Product';
@@ -9,22 +9,22 @@ const Home = () => {
   // Данные для блока распродаж
   const saleItems = [
     {
-      image: '/assets/images/si1.jpg',
+      image: '/react-final/public/assets/images/si1.jpg',
       discount: '30% OFF',
       category: 'FOR WOMEN'
     },
     {
-      image: '/assets/images/si2.jpg',
+      image: '/react-final/public/assets/images/si2.jpg',
       discount: '30% OFF',
       category: 'FOR MEN'
     },
     {
-      image: '/assets/images/si3.jpg',
+      image: '/react-final/public/assets/images/si3.jpg',
       discount: '30% OFF',
       category: 'FOR KIDS'
     },
     {
-      image: '/assets/images/sibig.jpg',
+      image: '/react-final/public/assets/images/sibig.jpg',
       discount: '30% OFF',
       category: 'ACCESORIES',
       big: true
@@ -35,12 +35,12 @@ const Home = () => {
   const featuredProducts = [
     {
       id: 1,
-      image: '/assets/images/img1_catalog.png',
+      image: '/react-final/public/assets/images/img1_catalog.png',
       name: 'ELLERY X M\'O CAPSULE',
       description: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.',
       price: 52.00
     },
-    // Остальные товары аналогично...
+    
   ];
 
   return (
@@ -49,7 +49,7 @@ const Home = () => {
       
       {/* Промо-блок */}
       <section className="promo">
-        <img className="promo__img" src="/assets/images/promo.png" alt="Brand" />
+        <img className="promo__img" src="/react-final/public/assets/images/promo.png" alt="Brand" />
         <div className="promo__content">
           <div className="promo__info">
             <h1 className="promo__title">THE BRAND</h1>
